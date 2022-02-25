@@ -1,4 +1,4 @@
-package randomcolor.cisc3171.bc.cuny.edu;
+package edu.cuny.bc.cisc3171.randomcolor;
 
 import android.content.Context;
 
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
     public void useAppContext() {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
-        assertEquals("randomcolor.cisc3171.bc.cuny.edu", appContext.getPackageName());
+        assertEquals("edu.cuny.bc.cisc3171.randomcolor", appContext.getPackageName());
     }
 }

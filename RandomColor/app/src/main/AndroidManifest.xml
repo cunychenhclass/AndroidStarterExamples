@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="randomcolor.cisc3171.bc.cuny.edu">
+    package="edu.cuny.bc.cisc3171.randomcolor">
 
     <application
         android:allowBackup="true"

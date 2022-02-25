@@ -1,4 +1,4 @@
-package randomcolor.cisc3171.bc.cuny.edu;
+package edu.cuny.bc.cisc3171.randomcolor;
 
 import androidx.appcompat.app.AppCompatActivity;
 
