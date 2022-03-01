@@ -20,7 +20,6 @@
             android:name=".GuessNumberGameActivity"
             android:exported="false"
             android:label="Guess Number" />
-            />
         <activity
             android:name=".MainActivity"
             android:exported="true"
