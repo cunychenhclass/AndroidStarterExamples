@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -19,20 +18,15 @@ public class MainActivity extends AppCompatActivity {
 
         final Button btnTemperatureConverter = findViewById(R.id.btn_temperature_converter);
 
-        btnTemperatureConverter.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
+        btnTemperatureConverter.setOnClickListener(view -> {
                 Intent intent = new Intent(MainActivity.this, TemperatureConverterActivity.class);
                 startActivity(intent);
-            }
         });
 
         final EditText textName = findViewById(R.id.text_user_name);
         final EditText textLevel = findViewById(R.id.text_level);
         final Button btnGuessNumber = findViewById(R.id.btn_guess_number);
-        btnGuessNumber.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
+        btnGuessNumber.setOnClickListener(view -> {
                 Intent intent = new Intent(MainActivity.this, GuessNumberGameActivity.class);
                 intent.putExtra("name", textName.getText().toString());
                 int level = Integer.parseInt(textLevel.getText().toString());
@@ -45,8 +39,7 @@ public class MainActivity extends AppCompatActivity {
                 }
                 intent.putExtra("level", level);
                 startActivity(intent);
-            }
-        });
+            });
 
 
     }

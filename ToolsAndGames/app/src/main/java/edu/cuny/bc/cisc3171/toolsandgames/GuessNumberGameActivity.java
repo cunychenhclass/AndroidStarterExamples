@@ -3,7 +3,6 @@ package edu.cuny.bc.cisc3171.toolsandgames;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import android.view.View;
 import android.widget.TextView;
 import android.widget.EditText;
 import android.widget.Button;
@@ -35,9 +34,7 @@ public class GuessNumberGameActivity extends AppCompatActivity {
         Locale current = getResources().getConfiguration().locale;
         textHint.setText(String.format(current, "Enter a number between %d and %d (both inclusive)", game.getMinNum(), game.getMaxNum()));
 
-        btnConfirm.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
+        btnConfirm.setOnClickListener(view -> {
                 int guessed = Integer.parseInt(textNumberGuessed.getText().toString());
                 if (game.takeGuess(guessed) < 0) {
                     textHint.setText(getString(R.string.guess_too_small));
@@ -46,8 +43,7 @@ public class GuessNumberGameActivity extends AppCompatActivity {
                 } else {
                     textHint.setText(getString(R.string.guessed_it));
                 }
-            }
-        });
+            });
 
         btnExit.setOnClickListener(view -> finish());
     }
