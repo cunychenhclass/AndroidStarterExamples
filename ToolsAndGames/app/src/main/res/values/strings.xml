@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">ToolsAndGames</string>
+    <string name="guess_number_game">Guess Number Game</string>
+    <string name="temperature_converter">Temperature Converter</string>
+    <string name="name">Name</string>
+    <string name="level">Level</string>
+    <string name="guess_number">Guess the number</string>
+    <string name="hint">Hint</string>
+    <string name="confirm">Confirm!</string>
+    <string name="exit">Exit!</string>
+    <string name="level_level">Level %d</string>
+    <string name="guess_too_small">Your guess is too small!</string>
+    <string name="guess_too_big">Your guess is too big!</string>
+    <string name="guessed_it">Wow, you guessed it!</string>
+    <string name="your_name">Your Name</string>
+    <string name="game_level">Game Level</string>
+    <string name="digit_one">1</string>
+</resources>

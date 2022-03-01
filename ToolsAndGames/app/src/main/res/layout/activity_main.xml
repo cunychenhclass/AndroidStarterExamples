@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/text_user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:hint="@string/your_name"
+                    android:gravity="center"
+                    android:text=""
+                    android:autofillHints="" />
+
+                <EditText
+                    android:id="@+id/text_level"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/game_level"
+                    android:text="@string/digit_one"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:autofillHints="" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@id/btn_guess_number"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/guess_number_game" />
+        </LinearLayout>
+
+        <Button
+            android:id="@id/btn_temperature_converter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/temperature_converter" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
