@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MathApp</string>
+    <string name="enter_an_integer">Enter an integer</string>
+    <string name="plus_sign">+</string>
+    <string name="equal_sign">=</string>
+    <string name="question_mark">?</string>
+    <string name="do_average">Average!</string>
+    <string name="expect_two_inputs">Two integer inputs must be given!</string>
+</resources>
